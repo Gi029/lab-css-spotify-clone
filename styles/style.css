@@ -9,21 +9,19 @@ White: #FFF
 *{
 margin: 0%;
 font-family: Arial, Helvetica, sans-serif;
-box-sizing: border-box;
+
 
 }
 
 body{
 
-    height: 700px;
-  
+    height: 1600px;
     display: flex;
     flex-direction: column;
 }
 
 
   header{
-  
     display: flex;
     flex: 0.5;
     flex-direction: row;
@@ -44,7 +42,7 @@ body{
     flex: 1;
   }
   nav span{
-    border: 1px solid rgb(38, 255, 0);
+   
     display: flex;
     flex: 1;
     justify-content: center;
@@ -60,18 +58,261 @@ body{
     flex-direction: column;
     flex: 10;
 }
-
+/* HERO */
 .box1{
-    border:1px solid rgb(84, 26, 26);
+    
     display: flex;
     flex-direction: column;
-    
+    flex: 1;
     background-image: url(/images/landing.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 30%;
-
+    background-position: 100%;
+   
 }
 .box1>div:nth-child(1){
+   
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+
+}
+.box1_text{
+
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+.box1_text>div:nth-child(1){
+  
+    display: flex;
+    flex:1;
+    justify-content: center;
+}
+.box1_text>div:nth-child(2){
+   
+    display: flex;
+    flex:6;
+    justify-content: center;
+}
+
+/* TARJETAS */
+
+.box2{
+
+  display: flex;
+  flex: 0.7;
+  flex-direction: column;
+  margin-right: 180px;
+  margin-left: 120px;
+  
+
+
+  
+ }
+ .box2_titulo{
+  font-size: 20px;
+  display: flex;
+  flex:1;
+  justify-content: center;
+  
+ }
+ h2{
+  text-decoration: underline 2px solid #1ED760;
+  text-underline-offset: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
  
+ .box2_cards{
+ 
+  display: flex;
+  flex:2;
+  justify-content: center;
+  
+ }
+
+ .box2_cards>div{
+
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+text-align: center;
+
+}
+ 
+.box2_cards>div:nth-child(1),
+.box2_cards>div:nth-child(2),
+.box2_cards>div:nth-child(3){
+
+  display: flex;
+  flex: 1;
+}
+
+.card_1>span:nth-child(1){
+ 
+display: flex;
+flex: 1;
+background-image: url(/images/music-icon.png);
+background-size:25%;
+background-repeat: no-repeat;
+background-position: 50%;
+
+}
+.card_2>span:nth-child(1){
+
+display: flex;
+flex: 1;
+background-image: url(/images/high-quality-icon.png);
+background-size:25%;
+background-repeat: no-repeat;
+background-position: 50%;
+
+}
+
+.card_3>span:nth-child(1){
+
+display: flex;
+flex: 1;
+background-image: url(/images/devices-icon.png);
+background-size:25%;
+background-repeat: no-repeat;
+background-position: 50%;
+
+}
+/* titulos */
+.card_1>span:nth-child(2),
+.card_2>span:nth-child(2),
+.card_3>span:nth-child(2){
+
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #00B172;
+}
+
+
+.card_1>span:nth-child(3),
+.card_2>span:nth-child(3),
+.card_3>span:nth-child(3){
+  
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+.card_1>span:nth-child(3)>p{
+  display: flex;
+  width: 50%;
+  text-align: center;
+   
+}
+
+
+.box3{
+  border: 1px solid red;
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  background-color: #00B172;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 5%;
+  
+}
+.text_izquierda{
+  border: 1px solid red;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+}
+
+/* titulo */
+.box3 h2{ 
+   display: flex;
+   padding-bottom: 20px;
+   color:white;
+   text-decoration: underline 2px solid white;
+   text-underline-offset: 10px;
+}
+
+.text_izquierda  div{
+  border: 1px solid red;
+  display: flex;
+  flex:1;
+}
+.text_izquierda>div:nth-child(1){
+  display: flex;
+  padding-bottom: 40px;
+
+}
+.text_izquierda>div:nth-child(2)>h4,
+.text_izquierda>div:nth-child(4)>h4,
+.text_izquierda>div:nth-child(6)>h4{
+   display: flex;
+   flex:1;
+   font-size: 20px;
+   color: white;
+   align-items: center;
+ 
+}
+
+
+.text_izquierda>div:nth-child(3),
+.text_izquierda>div:nth-child(5),
+.text_izquierda>div:nth-child(7){
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  color: white;
+
+ 
+}
+
+.text_izquierda p{
+  display: flex;
+  flex: 1;
+  line-height: 1.5;
+}
+
+
+.Logo_spotify{
+  border: 1px solid red;
+  display: flex;
+  flex:0.5;
+  flex-direction: column;
+  background-image: url(/images/spotify-logo.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+
+
+.img_kanye{
+  border: 1px solid red;
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  background-image: url(/images/spotify-app.jpg);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
 }
